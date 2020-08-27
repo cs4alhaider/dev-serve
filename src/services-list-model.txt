@@ -21,10 +21,12 @@ MyApp
     filePath = ./all-services/v1-oauth-token.json
     servicePath = /v1/oauth/token
     method = GET
+    authRequired bool = true
     parameters[] = username, password, appID, deviceId, appVersion
   services[1]
     id number = 0
     filePath = ./all-services/v1-oauth-logout.json
     servicePath = /v1/oauth/logout
     method = POST
+    authRequired bool = true
     parameters[] = username
