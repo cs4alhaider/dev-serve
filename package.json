@@ -1,0 +1,26 @@
+{
+  "name": "dev-serve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs4alhaider/dev-serve.git"
+  },
+  "author": "cs4alhaider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs4alhaider/dev-serve/issues"
+  },
+  "homepage": "https://github.com/cs4alhaider/dev-serve#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

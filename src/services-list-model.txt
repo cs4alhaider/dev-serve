@@ -1,0 +1,30 @@
+MyApp
+  testData
+    staging[]
+      id number = 0
+      username = testAdmin
+      password = testAdmin
+      author = Abdullah Alhaider
+      createdAt d = 2020-08-27
+      relatedToProject[] = MMD-3993
+      eligibility[] = create order, modify order, reassign order, delete order, cancel order
+    production[]
+      id number = 0
+      username = realUser
+      password = realPass
+      author = Abdullah Alhaider
+      createdAt d = 2020-08-27
+      relatedToProject[] = MMD-3993, MMD-4003
+      eligibility[] = create order, modify order, reassign order, delete order, cancel order
+  services[0]
+    id number = 0
+    filePath = ./all-services/v1-oauth-token.json
+    servicePath = /v1/oauth/token
+    method = GET
+    parameters[] = username, password, appID, deviceId, appVersion
+  services[1]
+    id number = 0
+    filePath = ./all-services/v1-oauth-logout.json
+    servicePath = /v1/oauth/logout
+    method = POST
+    parameters[] = username
