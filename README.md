@@ -1,9 +1,6 @@
 # dev-serve
 
 
----
-
-
 ### TODO:
 - [x] add expess and nodmon
 - [x] build services json model
