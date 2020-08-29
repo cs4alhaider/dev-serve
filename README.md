@@ -4,9 +4,11 @@
 ### TODO:
 - [x] add expess and nodmon
 - [x] build services json model
-- [x] get `('/')` to retreve all data
+- [x] get `('/all')` to retreve all data
 - [x] enable get `/services/:id`
 - [ ] enable get `/testData?relatedToProject=MMD-3993,MMD-4003`
+- [x] use `yup` for requests validations 
+- [x] use `helmet` for security 
 - [ ] mapping all services to same app services using `app.use`
 - [ ] docker file
 - [ ] docker-compose 
