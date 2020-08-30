@@ -11,9 +11,6 @@ app.use(helmet());
 // Only accept json data
 app.use(express.json());
 
-// public
-app.use(express.static("./public"));
-
 // Show all available services and test data
 app.use(require("./route/services"));
 
