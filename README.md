@@ -10,8 +10,8 @@
 - [x] use `yup` for requests validations
 - [x] use `helmet` for security
 - [ ] mapping all services to same app services using `app.use`
-- [ ] docker file
-- [ ] docker-compose
+- [x] docker file
+- [x] docker-compose
 - [ ] automate creating files
 - [ ] integrate mongoDB
 - [ ] build user model
