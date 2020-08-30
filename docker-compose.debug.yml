@@ -9,4 +9,4 @@ services:
     ports:
       - 8080
       - 8080:8080
-    command: ["node", "--inspect=0.0.0.0:8080", "index.js"]
+    command: ["node", "--inspect=0.0.0.0:8080", "app.js"]
