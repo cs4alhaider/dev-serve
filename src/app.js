@@ -3,8 +3,12 @@ const lodash = require("lodash");
 const express = require("express");
 const helmet = require("helmet");
 const yup = require("yup");
-var { nanoid } = require("nanoid");
-const { nextTick } = require("process");
+var {
+  nanoid
+} = require("nanoid");
+const {
+  nextTick
+} = require("process");
 
 require("dotenv").config();
 
@@ -41,13 +45,17 @@ app.get("/all/services", (req, res) => {
 
 // TODO: refactor
 app.get("/all/services/:id", (req, res) => {
-  const { id: service } = req.params;
+  const {
+    id: service
+  } = req.params;
   const object = lodash.find(
     servicesModel.services,
     (obj) => obj.id === parseInt(service)
   );
   if (!object) {
-    res.status(404).json({ error: `No service with ${id}` });
+    res.status(404).json({
+      error: `No service with ${id}`
+    });
     return;
   }
   res.send(object);
@@ -64,7 +72,11 @@ const schema = yup.object().shape({
 });
 
 app.post("/", async (req, res, next) => {
-  let { id, servicePath, method } = req.body;
+  let {
+    id,
+    servicePath,
+    method
+  } = req.body;
   try {
     await schema.validate({
       id,
