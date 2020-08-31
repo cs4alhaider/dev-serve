@@ -9,7 +9,7 @@
 - [ ] enable get `/testData?relatedToProject=MMD-3993,MMD-4003`
 - [x] use `yup` for requests validations
 - [x] use `helmet` for security
-- [ ] mapping all services to same app services using `app.use`
+- [x] mapping all services to same app services using `app.use`
 - [x] docker file
 - [x] docker-compose
 - [ ] automate creating files
