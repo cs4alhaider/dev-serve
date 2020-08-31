@@ -26,6 +26,6 @@ const port = process.env.PORT || 8080;
 
 app.listen(port, () =>
   console.log(
-    `|=========== App listening on http://localhost:${port} ===========|`
+    `|=========== 📻 App listening on http://localhost:${port} 📻 ===========|`
   )
 ); // --> http://localhost:8080/
