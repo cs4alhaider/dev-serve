@@ -25,4 +25,9 @@
 - [ ] build docker image
 - [ ] upload and share docker image
 - [ ] deploy docker image
+- [ ] create CI/CD pipeline to listen on pull requests and branch changes to take actions
+  - [ ] validate code
+  - [ ] run `prettier` for code styling
+  - [ ] restart server once code pushed into master branch
+  - [ ] optional -> send Slack notification
 - [ ] build simple mobile app if useful to add test data by internal teams
