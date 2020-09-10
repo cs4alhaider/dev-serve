@@ -1,0 +1,40 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/v1
+
+
+###
+
+GET http://localhost:8080/v1/services
+
+
+###
+
+GET http://localhost:8080/v1/services/0
+
+
+###
+
+GET http://localhost:8080/v1/testdata
+
+
+###
+
+GET http://localhost:8080/v1/testdata/staging
+
+
+###
+
+GET http://localhost:8080/v1/testdata/staging/0
+
+
+###
+
+GET http://localhost:8080/v1/testdata/production
+
+
+###
+
+GET http://localhost:8080/v1/testdata/production/0
