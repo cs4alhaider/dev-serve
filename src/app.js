@@ -5,14 +5,26 @@ require("dotenv").config();
 
 const app = express();
 
+const data = require("./services-data/servicesModel");
+
 // Basic security
 app.use(helmet());
 
 // Only accept json data
 app.use(express.json());
 
-// Show all available services and test data
-app.use(require("./route/services"));
+app.get("/", (req, res) => {
+  res.send(data)
+})
+
+app.get("/v1", (req, res) => {
+  res.send(data)
+})
+
+// Show all available services
+app.use("/v1/services", require("./route/services"));
+
+app.use("/v1/testData", require("./route/testData"));
 
 app.use(require("./route/main"));
 
